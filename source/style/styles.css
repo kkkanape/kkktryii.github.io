@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster&display=swap');
+
+
+
+body {
+    font-family: Creepster;
+    serif;
+    background: linear-gradient(90deg, #3900A7 0%, #433636 100%);
+}
+
+.navbar-nav .nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgba(106, 243, 197, 0.781);
+}
+
+.navbar-brand img {
+    width: 45px;
+}
+
+.navbar-toggler {
+    background-color: cadetblue;
+}
+
+.card {
+    color: aquamarine;
+    background: linear-gradient(270deg, #3900A7 0%, #433636 100%);
+    box-shadow: 13px 13px 9px 0px rgba(173, 90, 233, 0.41);
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(270deg, #3900A7 0%, #433636 100%);
+}
+
+.car-sidebar {
+    color: aquamarine;
+    margin: auto auto;
+    padding: 5.5em;
+}
+
+.car-img {
+    padding: 5em;
+}
+
+.help{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+footer {
+    background: linear-gradient(180deg, #240E48 4%, #020202 30%, #0B051C 96%);
+}
+
+.footer-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+
+.med-links {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.anim1 {
+    animation: myAnim 15s ease 0s infinite normal backwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}

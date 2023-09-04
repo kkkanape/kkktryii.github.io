@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalupa.net</title>
+    <link rel="stylesheet" href="source/style/maincontstyle.css">
+    <link rel="stylesheet" href="source/style/cartstyle.css">
+    <link rel="stylesheet" href="source/style/navbar.css">
+</head>
+<!-- $$ <p>шрифт по умолчанию имеет 16 px, соответственно, величина 1em и 1rem = 16px</p>
+
+<div id="red">text
+    <div id="green">text
+        <div id="yellow">text
+             <div id="grey">text
+
+             </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- div.name=<div class="name></div>| или можно просто поставить точку и вписать имя класса и создаться div" -->
+
+<body>
+    <div class="navbar">
+        <a href=""><img src="data:image/jpeg;base64,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" alt="Bugatti"></a>
+        <div class="drop">
+            <button class="navbtn">&#9776</button>
+            <div class="navlist">
+                <a target="_blank" href="section.html">Bugatti </a>
+                <a target="_blank" href="section.html">O nas</a>
+                <a target="_blank" href="section.html">Dlya nas</a>
+                <a target="_blank" href="section.html">Pro nas</a>
+                <a target="_blank" href="section.html">Contacts</a>
+                <a target="_blank" href="/">Back</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="main_container">
+        <div class="left_bar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vel!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vel!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vel!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vel!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vel!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vel!</p>
+        </div>
+        <div class="container">
+                <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            <div class="cart"><a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank"><img src="source/images/Untitled.png" alt="ошибка сети">
+            </a>
+                <div class="info">
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>Bugatti</p>
+                    </a>
+                    <a href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/" target="_blank">
+                        <p>25 $</p>
+                    </a>
+                    <a target="_blank" href="https://www.bugatti.com/the-bugatti-models/chiron-facets-of-performance/sport/"><button>Купить</button></a>
+                </div>
+            
+            </div>
+            
+        </div> 
+        <div class="right_bar">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, magni.</p>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
